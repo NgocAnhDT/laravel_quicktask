@@ -1,7 +1,22 @@
 {
-    "The :attribute must contain at least one letter.": "The :attribute must contain at least one letter.",
-    "The :attribute must contain at least one number.": "The :attribute must contain at least one number.",
-    "The :attribute must contain at least one symbol.": "The :attribute must contain at least one symbol.",
-    "The :attribute must contain at least one uppercase and one lowercase letter.": "The :attribute must contain at least one uppercase and one lowercase letter.",
-    "The given :attribute has appeared in a data leak. Please choose a different :attribute.": "The given :attribute has appeared in a data leak. Please choose a different :attribute."
+    "welcome": "Welcome to our website",
+    "speciality": "Speciality",
+    "create new": "Create New",
+    "teacher": "Teacher",
+    "create": "Create",
+    "edit": "Edit",
+    "show": "Show",
+    "delete": "Delete",
+    "name": "Name",
+    "list": "List",
+    "no": "No",
+    "option": "Option",
+    "create success": "Created successfully",
+    "delete success":"Deleted successfully",
+    "submit": "Submit",
+    "back": "Back",
+    "required": "The name field is required.",
+    "min": "The name must be at least 2 characters",
+    "max": "The name must not be greater than 255 characters"
 }
+
