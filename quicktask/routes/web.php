@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SpecialityController;
 use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\TeacherController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/language/{locale}', [LanguageController::class, 'switchLang']);
+Route::get('/language/{locale}', [LanguageController::class, 'switchLang'])->name('lang');
 
 Route::resource('speciality', SpecialityController::class);
+
+Route::resource('teacher', TeacherController::class);
