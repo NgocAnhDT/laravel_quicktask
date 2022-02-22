@@ -24,8 +24,8 @@
                 <span class="fas fa-caret-down second"></span>
                 </a>
                 <ul class="te-show">
-                    <li><a href="#">{{__('create new') ." " .__('teacher')}}</a></li>
-                    <li><a href="#">{{__('list')}} </a></li>
+                    <li><a href="{{ route('teacher.create') }}">{{__('create new') ." " .__('teacher')}}</a></li>
+                    <li><a href="{{ route('teacher.index') }}">{{__('list')}} </a></li>
                 </ul>
             </li>
         </ul>

@@ -183,6 +183,12 @@ nav ul li a span.rotate{
   margin: 4px 2px;
   cursor: pointer;
 }
+
+.btn-delete:hover {
+  cursor: pointer;
+  background-color: steelblue;
+}
+
 #specialities {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -228,4 +234,18 @@ input[type=text] {
 
 .btn-submit:hover {
   cursor: pointer;
+}
+
+label {
+  width: 80px;
+  
+}
+.form-spe {
+  display: inline-block;
+  width: 300px;
+  padding: 5px 8px;
+  line-height: 400;
+  border-radius: 2px;
+  background-color: white;
+  border: 0.5px solid #000000;
 }
