@@ -14,6 +14,6 @@ class Teacher extends Model
     
     public function speciality() 
     {
-        return $this->belongsTo(Speciality::class, 'id');
+        return $this->belongsTo(Speciality::class);
     }
 }

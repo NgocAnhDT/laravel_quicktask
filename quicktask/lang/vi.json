@@ -23,6 +23,7 @@
     "unique": "Trường :attribute đã có trong cơ sở dữ liệu",
     "phone": "Số điện thoại",
     "fullname": "Họ tên",
-    "size": "Trường :attribute phải bằng 10",
-    "numeric": "Trường :attribute phải là số"
+    "regex": "Trường :attribute có định dạng không hợp lệ.",
+    "string": "Trường :attribute chỉ có thể chứa các kí tự.",
+    "exists": "Dữ liệu đã có, cập nhật không thành công"
 } 

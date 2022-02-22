@@ -14,6 +14,6 @@ class Speciality extends Model
 
     public function teachers() 
     {
-        return $this->hasMany(Teacher::class, 'speciality_id');
+        return $this->hasMany(Teacher::class);
     }
 }

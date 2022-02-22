@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('teachers', function (Blueprint $table) {
             $table->increments('teacher_id');
             $table->string('fullname');
-            $table->string('avatar');
+            $table->string('phone');
             $table->integer('speciality_id')->unsigned();
             $table->timestamps();
             $table->foreign('speciality_id')->references('id')->on('specialities')->onDelete('cascade');

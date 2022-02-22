@@ -22,7 +22,8 @@
     "update success": "Updated successfully",
     "phone": "Phone Number",
     "fullname": "Fullname",
-    "size": "The :attribute must be 10.",
-    "numeric": "The :attribute must be a number."
+    "regex": "The :attribute format is invalid.",
+    "string": "The :attribute must be a string.",
+    "exists": "Data is invalid, update failed"
 }
 
