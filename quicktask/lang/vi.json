@@ -25,5 +25,6 @@
     "fullname": "Họ tên",
     "regex": "Trường :attribute có định dạng không hợp lệ.",
     "string": "Trường :attribute chỉ có thể chứa các kí tự.",
-    "exists": "Dữ liệu đã có, cập nhật không thành công"
+    "exists": "Dữ liệu đã có, cập nhật không thành công",
+    "delete confirm": "Bạn có chắc chắn muốn xóa?"
 } 

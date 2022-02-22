@@ -24,6 +24,6 @@
     "fullname": "Fullname",
     "regex": "The :attribute format is invalid.",
     "string": "The :attribute must be a string.",
-    "exists": "Data is invalid, update failed"
+    "exists": "Data is invalid, update failed",
+    "delete confirm": "Are you sure you want to delete?"
 }
-

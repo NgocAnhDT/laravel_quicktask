@@ -25,7 +25,7 @@ class StoreRequest extends FormRequest
     {
         return [
             'fullname' => 'required|string|min:2',
-            'phone' => 'required|regex:/(0)[1-9]{9}/|unique:tachers',
+            'phone' => 'required|regex:/(0)[1-9]{9}/|unique:teachers',
             'speciality_id' => 'required',
         ];
     }
