@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\Speciality\StoreRequest;
+use App\Http\Requests\Speciality\UpdateRequest;
 use App\Models\Speciality;
 use Illuminate\Http\Request;
 
@@ -63,9 +64,9 @@ class SpecialityController extends Controller
      */
     public function edit($id)
     {
-        $speciality_id = Speciality::findOrFail($id);
+        $speciality = Speciality::findOrFail($id);
 
-        return view('edit', compact('speciality_id'));
+        return view('speciality.edit', compact('speciality'));
     }
 
     /**
@@ -75,9 +76,13 @@ class SpecialityController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateRequest $request, $id)
     {
-        //
+        $speciality = Speciality::findOrFail($id);
+        $speciality->name = $request->name;
+        $speciality->update();
+
+        return redirect()->route('speciality.index')->with('success','update success');
     }
 
     /**
@@ -91,7 +96,7 @@ class SpecialityController extends Controller
         // Tìm đến đối tượng muốn xóa
         $speciality_id = Speciality::findOrFail($id);
         $speciality_id->delete();
-        
+
         return redirect()->route('speciality.index')->with('success', "delete success");
     }
 }

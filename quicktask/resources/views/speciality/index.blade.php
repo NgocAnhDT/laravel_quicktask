@@ -22,7 +22,7 @@
             <td>{{ $speciality->name}}</td>
             <td>
                 <div class="btn-edit">
-                   
+                    <a href="{{ route('speciality.edit', $speciality->id) }}">{{__('edit')}}</a>
                 </div>
                 <form
                     action="{{ route('speciality.destroy', $speciality->id) }}" method="POST">

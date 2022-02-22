@@ -15,7 +15,14 @@
     "delete success": "Đã xóa thành công",
     "submit": "Thêm mới",
     "back": "Quay lại",
-    "required": "Trường tên không được bỏ trống.",
-    "min": "Trường tên phải có tối thiểu 2 kí tự",
-    "max": "Trường tên không được lớn hơn 255 kí tự."
+    "required": "Trường :attribute không được bỏ trống.",
+    "min": "Trường :attribute  phải có tối thiểu 2 kí tự",
+    "max": "Trường :attribute  không được lớn hơn 255 kí tự.",
+    "update": "Cập nhật",
+    "update success": "Cập nhật thành công",
+    "unique": "Trường :attribute đã có trong cơ sở dữ liệu",
+    "phone": "Số điện thoại",
+    "fullname": "Họ tên",
+    "size": "Trường :attribute phải bằng 10",
+    "numeric": "Trường :attribute phải là số"
 } 
