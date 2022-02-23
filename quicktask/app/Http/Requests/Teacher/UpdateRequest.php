@@ -24,7 +24,7 @@ class UpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'fullname' => 'required|string|min:2',
+            'fullname' => 'required|string|min:2,fullname'.request()->id,
             'phone' => 'required|regex:/(0)[1-9]{9}/',
             'speciality_id' => 'required',
         ];

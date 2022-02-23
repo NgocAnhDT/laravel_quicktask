@@ -32,10 +32,11 @@
                         action="{{ route('teacher.destroy', $teacher->teacher_id) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" onclick="" class="btn-delete">{{__('delete')}}</button>
+                            <button type="submit" id="btn-delete" data-confirm="{{ __('delete confirm') }}" class="btn-delete">{{__('delete')}}</button>
                     </form>
                 </td>
             </tr>
         @endforeach
     </div>
+    <script type="text/javascript" src="{{ asset('js/delete.js') }}"></script>
 @endsection

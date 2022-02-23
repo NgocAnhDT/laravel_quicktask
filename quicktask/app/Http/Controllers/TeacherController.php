@@ -84,7 +84,8 @@ class TeacherController extends Controller
     {
         $teacher_exists = Teacher::where([
             ['fullname','=', $request->fullname],
-            ['speciality_id','=', $request->speciality_id ]
+            ['speciality_id','=', $request->speciality_id],
+            ['teacher_id', '<>', $id]
             ])->first();
         if (!$teacher_exists){
             $teacher = teacher::findOrFail($id);
